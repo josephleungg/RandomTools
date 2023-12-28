@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Tools</title>
+
+        <!-- favicon -->
+        <link rel="icon" href="./src/images/icon.png" type="image/png">
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <!-- css -->
+        <link rel="stylesheet" href="./src/styles.css">
+
+        <!-- import google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!-- header welcome text -->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- welcome message box -->
+                <div class="col-md-8">
+                    <!-- welcome message div -->
+                    <div class="welcome-box">
+                        <h2 id="welcome-message"></h2>
+                        <div id="name-box">
+                            <form id="name-form">
+                                <input type="text" id="name-input" placeholder="Enter your name..." required>
+                                <button type="submit" id="submit-btn">➤</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- menu nav bar -->
+                    <div id="menubar">
+                        <div class="menu-options" onclick="homeQuery()">home</div>
+                        <div class="menu-options" onclick="aboutQuery()">about</div>
+                        <div class="menu-options" onclick="contactQuery()">contact</div>
+                    </div>
+                </div>
+
+                <!-- show weather here -->
+                <div class="col-md-4">
+                    <div id="weather">
+                        
+                        <div class="first-row">
+                            <div id="city"></div>
+                        </div>
+
+                        <div id="temp"></div>
+
+                        <div class="third-row">
+                            <div id="humidity"></div>
+                            <div id="weather-icon"><img id="wicon" src="" alt="Weather icon"></img></div>
+                            <div id="feels-like"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr id="header-line">
+
+        <!-- content section -->
+        <!-- content will change depending on which button on the menu was clicked -->
+        <div class="container-fluid" id="content">
+            <!-- use js to do on click on buttons and change query string, use if statements to check query string and change the innerhtml of this div
+                 depending on which menu button was clicked -->
+                
+        </div>
+
+        <!-- js -->
+        <script src="./src/script.js"></script>
+    </body>
+</html>

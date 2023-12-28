@@ -1,0 +1,14 @@
+app ideas
+- calculator
+- gpa calculator with weighted averages etc
+- stock info for the day
+	- gainers and losers for the day
+	- stock prices for big tech companies
+	- show the newest 3 articles from yahoo finance about stocks or crypto
+- prices for crypto aswell
+- BMI Calculator
+- 
+
+main page
+- cards showing all the apps
+- show weather on homepage
