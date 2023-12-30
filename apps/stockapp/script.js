@@ -55,15 +55,6 @@ form.addEventListener("submit", function(event) {
         // getting card section
         let cardSection = document.getElementById("card-section");
 
-        // checking if the stock is a gainer or loser for the day
-        // if (changeNum > 0) {
-        //     document.getElementById("change-amount").style.color = "#00a300";
-        //     document.getElementById("change-percent").style.color = "#00a300";
-        // } else if (changeNum < 0) {
-        //     document.getElementById("change-amount").style.color = "#cc0000";
-        //     document.getElementById("change-percent").style.color = "#cc0000";
-        // }
-
         // adding cards
         cardSection.innerHTML += `
         <div class="cards">
@@ -83,6 +74,7 @@ form.addEventListener("submit", function(event) {
         
         </div>
         `;
+
     }
 
     getStockData();
