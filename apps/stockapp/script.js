@@ -25,11 +25,11 @@ form.addEventListener("submit", function(event) {
         console.log(data);
     }
 
-    try {
-        getStockData();
-    } catch (error) {
-        console.error(error);
-    }
+    // try {
+    //     getStockData();
+    // } catch (error) {
+    //     console.error(error);
+    // }
 
     // for debugging
     console.log(symbol);
