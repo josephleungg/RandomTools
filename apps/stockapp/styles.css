@@ -28,3 +28,51 @@ body {
     margin-left: 0.5em;
     width: 3%;
 }
+
+#error-check{
+    color: red;
+    text-align: center;
+}
+
+/* cards */
+#card-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4em;
+    width: 100%;
+}
+
+.cards {
+    background-color: #fcfdfd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 2em;
+    flex-basis: 25%;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ticker-symbol {
+    text-align: center;
+    font-weight: 800;
+}
+
+#last-price {
+    text-align: center;
+    font-weight: 600;
+}
+
+.bold-titles {
+    font-weight: bold;
+}
+
+/* media queries */
+@media (max-width: 788px) {
+    .cards {
+        flex-basis: 40%;
+        font-size: 14px;
+    }
+}
