@@ -59,6 +59,12 @@ async function checkWeather(){
 checkWeather();
 
 /////////////////////////////////////////////
+// card click on link
+function redirectToPage(url) {
+    window.open(url, '_blank');
+}
+
+/////////////////////////////////////////////
 // menu functions
 
 // functions for changing query string on click
@@ -104,13 +110,15 @@ function displayContent() {
         </div>
       </div>
       <div class="col-md-6 languages">
-        <div class="text-center">languages & frameworks used</div>
+        <div class="text-center">languages/frameworks & other technologies used</div>
         <div class="language-pics">
           <img id="html" src="./src/images/html-logo.png" alt="html">
           <img id="css" src="./src/images/css-logo.png" alt="css">
           <img id="js" src="./src/images/javascript-logo.png" alt="js">     
           <img id="bootstrap" src="./src/images/bootstrap-logo.png" alt="bootstrap">
-          <img id="openweather" src="./src/images/openweathermap-logo.png" alt="openweathermap">            
+          <img id="openweather" src="./src/images/openweathermap-logo.png" alt="openweathermap">
+          <img id="rapidapi" src="./src/images/rapidapi-logo.png" alt="rapidapi">
+          <img id="alphavantage" src="./src/images/alphavantage-logo.png" alt="alphavantage">            
         </div>
       </div>
     </div>
@@ -151,14 +159,11 @@ function displayContent() {
     </div>
     `;
 
-    const homeString = ``;
-
+    // conditions controlling what is being displayed
     if (queryString.includes("param=about")) {
         document.getElementById("content").innerHTML = aboutString;
     }else if (queryString.includes("param=contact")) {
         document.getElementById("content").innerHTML = contactString;
-    }else {
-        document.getElementById("content").innerHTML = "";
     }
 }
 
