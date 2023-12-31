@@ -264,15 +264,16 @@ h2 {
     border-top-right-radius: 20px; /* Set the radius for the top-right corner */
 }
 
-#calculator-title {
+#app-title {
     padding-left: 0.8em;
     padding-top: 0.5em;
     margin: 0;
-    font-weight: 600;
+    font-weight: 800;
 }
 
-#calculator-text {
+#app-text {
     padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
 .badges {
