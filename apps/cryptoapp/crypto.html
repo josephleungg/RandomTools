@@ -21,7 +21,45 @@
 </head>
 <body>
     
-    
+    <div class="container-fluid">
+
+        <!-- title -->
+        <div class="row">
+            <div class="col-md-12" id="header-text">
+                <h1 class="page-title">Crypto Lookup</h1>
+            </div>
+        </div>
+
+        <!-- crypto search bar -->
+        <div class="row">
+            <div class="col-md-12" id="search">
+                <form id="crypto-form">
+                    <input type="text" id="symbol-input" placeholder="Enter a coin name..." required>
+                    <button type="submit" id="submit-btn"><svg xmlns="http://www.w3.org/2000/svg" max-width="14" max-height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- error checking -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="error-check"></div>
+            </div>
+        </div>
+
+        <!-- displaying number of results -->
+        <div id="num-results" class="ms-md-5"></div>
+
+        <!-- cards for crypto search and displaying data afterwards -->
+        <div class="row">
+            <div class="col-md-12" id="card-section">
+
+            </div>
+        </div>
+
+    </div>
 
     <!-- js -->
     <script src="./script.js"></script>
