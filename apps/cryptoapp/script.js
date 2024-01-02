@@ -80,4 +80,14 @@ function getCryptoInfo(div){
     // display all the coins details
     // show the coins rank, percentage change next to the symbol or name, put the price, marketcap, 24h volume
     // let user select the change percentage for 1h, 3h, 12h, 24h, 7d, 30d, 3m, 1y, 3y, 5y, in price history
+
+    async function coinDetails() {
+        const url = "https://api.coinranking.com/v2/coin/" +  selectedCryptoDiv.dataset.variable1;
+        let response = await fetch(url, options);
+        let results = await response.json();
+
+        console.log(results);
+    }
+
+    coinDetails();
 };
