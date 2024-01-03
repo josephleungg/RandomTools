@@ -73,7 +73,7 @@ function getCryptoInfo(div){
 
     // resetting results div
     document.getElementById('num-results').innerHTML = "";
-    
+
     // grabbing the selected div uuid
     const selectedCryptoDiv = document.getElementById(div.id);
 
@@ -103,9 +103,15 @@ function getCryptoInfo(div){
         const volume = parseInt(results.data.coin["24hVolume"]).toLocaleString();
         const ath = parseInt(parseFloat(results.data.coin.allTimeHigh.price).toFixed(0)).toLocaleString();
         let circulatingSupply = parseInt(results.data.coin.supply.circulating);
-        const supplyPercent = (circulatingSupply/parseInt(results.data.coin.supply.max) * 100).toFixed(0);
+        let supplyPercent = (circulatingSupply/parseInt(results.data.coin.supply.max) * 100).toFixed(0);
         circulatingSupply = circulatingSupply.toLocaleString();
-        console.log(supplyPercent);
+
+        // checking if the max supply is infinite
+        if(isNaN(supplyPercent)){
+            supplyPercent = "ꝏ Supply";
+        }else{
+            supplyPercent = String(supplyPercent) + "%";
+        }
 
         // selecting card section to display the coin's info
         let sectionSelect = document.getElementById('card-section');
@@ -126,7 +132,7 @@ function getCryptoInfo(div){
                 </div>
 
                 <div class="card-row">
-                    <p><span class="fw-bold">Circulating Supply</span><br><span>${circulatingSupply} ${coinSymb} (${supplyPercent}%)</span></p>
+                    <p><span class="fw-bold">Circulating Supply</span><br><span>${circulatingSupply} ${coinSymb} (${supplyPercent})</span></p>
                 </div>
             </div>
         </div>
