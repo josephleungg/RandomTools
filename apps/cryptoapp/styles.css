@@ -10,6 +10,10 @@ body {
     padding-top: 2em;
 }
 
+#home-text {
+    text-decoration: none;
+}
+
 #search form {
     width: 100%;
     display: flex;
